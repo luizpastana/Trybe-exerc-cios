@@ -1,6 +1,10 @@
+O que eu vou aprender na Trybe:
+
 CSS
 HTML
 Java
 JavaScript
 Python
 Internet
+Git
+Bash
