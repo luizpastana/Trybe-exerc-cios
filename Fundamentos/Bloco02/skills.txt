@@ -3,3 +3,5 @@ HTML
 Java
 JavaScript
 Python
+Git
+Bash
