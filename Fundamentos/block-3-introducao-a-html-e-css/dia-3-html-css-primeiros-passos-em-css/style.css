@@ -13,6 +13,7 @@ div:hover {
 #complementar{
   background-color: royalblue;
   color: blanchedalmond;
+  height: 2em;
 }
 #escura{
   background-color: slategray;
