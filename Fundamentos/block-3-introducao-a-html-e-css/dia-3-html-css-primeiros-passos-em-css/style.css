@@ -3,14 +3,22 @@ div:hover {
 }
 #primaria{
   background-color: red;
+  color: aqua;
 }
 
 #secundaria{
   background-color: rosybrown;
+  color: bisque;
 }
 #complementar{
   background-color: royalblue;
+  color: blanchedalmond;
 }
 #escura{
   background-color: slategray;
+  color: burlywood;
+}
+#clara{
+  background-color: turquoise;
+  color: blue;
 }
