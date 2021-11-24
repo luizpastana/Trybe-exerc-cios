@@ -1,25 +1,9 @@
-div:hover {
-  border: 2px solid red;
+ol {
+  background-color: yellow;
 }
-#primaria{
-  background-color: red;
-  color: aqua;
+ol :nth-child(even){
+  color: green;
 }
-
-#secundaria{
-  background-color: rosybrown;
-  color: bisque;
-}
-#complementar{
-  background-color: royalblue;
-  color: blanchedalmond;
-  height: 2em;
-}
-#escura{
-  background-color: slategray;
-  color: burlywood;
-}
-#clara{
-  background-color: turquoise;
-  color: blue;
+ol :nth-child(odd){
+  text-transform: uppercase;
 }
