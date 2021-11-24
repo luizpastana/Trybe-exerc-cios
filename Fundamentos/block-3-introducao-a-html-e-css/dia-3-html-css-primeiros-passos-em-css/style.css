@@ -1,9 +1,25 @@
-ol {
+ol li {
   background-color: yellow;
 }
-ol :nth-child(even){
+ol li:nth-child(even){
   color: green;
 }
-ol :nth-child(odd){
+ol li:nth-child(odd){
   text-transform: uppercase;
+}
+
+h1, h2{
+  color: red;
+}
+h1 em, h2 em{
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+ul li:nth-child(-n+3){
+  color: blue;
+}
+
+#java{
+  background-color: pink;
 }
