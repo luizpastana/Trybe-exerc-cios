@@ -33,3 +33,10 @@ article{
 footer h2{
     margin-bottom: 50px;
 }
+
+nav ul li{
+    display: inline;
+}
+table, tr, td{
+    border: 1px solid gray;
+}
