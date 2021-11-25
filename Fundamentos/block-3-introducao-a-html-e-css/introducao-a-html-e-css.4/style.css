@@ -1,3 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rosybrown;
+}
+h1{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 1em;
+}
 p{
     text-align: justify;
 }
@@ -19,4 +29,7 @@ article{
     border: 2px solid red;
     width: 500px;
     height: 250px;
+}
+footer h2{
+    margin-bottom: 50px;
 }
