@@ -22,4 +22,6 @@ switch(pecaMinusculo){
     case "bispo":
         console.log("Eu ando para qualque lado, mas sempre de esquelha");
         break;
+    default:
+        console.log('Hum... Acho que esta peça é de outro jogo');
 }
