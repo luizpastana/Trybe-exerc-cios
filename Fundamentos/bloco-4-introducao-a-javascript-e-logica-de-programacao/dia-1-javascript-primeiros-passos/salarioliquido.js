@@ -6,16 +6,13 @@ let salarioLiquido = 0;
 let inss = 0;
 
 if(salarioBruto < 1556.95){
-    inss = 0.08 * salarioBruto;
-    
+    inss = 0.08 * salarioBruto;    
 }
 else if(salarioBruto < 2594.93){
-    inss = 0.09 * salarioBruto;
-   
+    inss = 0.09 * salarioBruto;   
 }
 else if(salarioBruto < 5189.82){
-    inss = 0.11 * salarioBruto;
-    
+    inss = 0.11 * salarioBruto;    
 }else{
     inss = salarioBruto - 570.88;
 }
