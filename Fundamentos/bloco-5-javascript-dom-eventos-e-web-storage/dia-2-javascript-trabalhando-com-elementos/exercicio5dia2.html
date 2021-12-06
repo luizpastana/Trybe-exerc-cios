@@ -73,7 +73,11 @@
 
       let newParagrafo = document.createElement('p');
       newParagrafo.innerText = 'Este é o paragráfo filho da section logo acima';
-      newSection.appendChild(newParagrafo);  
+      newSection.appendChild(newParagrafo);
+      
+      let newSectionTwo = document.createElement('section');
+      newSectionTwo.className = 'left-content';
+      newMain.appendChild(newSectionTwo);
     </script>
   </body>
 </html>
