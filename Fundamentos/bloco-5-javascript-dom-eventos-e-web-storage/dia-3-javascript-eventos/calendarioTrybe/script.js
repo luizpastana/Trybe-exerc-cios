@@ -13,4 +13,22 @@ function createDaysOfTheWeek() {
   
   createDaysOfTheWeek();
   
-  // Escreva seu código abaixo.
+  // Função que cria os dias no calendário
+
+  const diasDoCalendario = document.querySelector('#days');
+
+  let dezDaysList = [29, 30];
+  for (let index = 1; index <= 31; index += 1) {
+    dezDaysList.push(index);
+  }
+  
+  function createDays(array) {
+    for (let index = 0; index < array.length; index += 1) {
+      let day = document.createElement('li');
+      day.className = 'day';
+      day.innerText = index.toString();
+      diasDoCalendario.appendChild(day);
+    }
+  }
+
+  createDays(dezDaysList);
