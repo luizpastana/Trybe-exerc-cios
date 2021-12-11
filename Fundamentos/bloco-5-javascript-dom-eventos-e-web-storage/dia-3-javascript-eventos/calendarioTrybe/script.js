@@ -38,3 +38,19 @@ function createDaysOfTheWeek() {
   }
 
   createDays(dezDaysList);
+
+  // Função que cria o botão feriado
+
+  function criaBotao (){ 
+    let buttonsDiv = document.querySelector('.buttons-container');
+    let string = 'Feriados';
+    let button = document.createElement('button');
+    button.value = string;
+    button.innerText = string; 
+    button.id = 'btn-holiday';
+    // button.className = 'buttons-container';
+    button.type = 'text';
+    buttonsDiv.appendChild(button);
+  }
+
+  criaBotao();
