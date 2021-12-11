@@ -26,7 +26,13 @@ function createDaysOfTheWeek() {
     for (let index = 0; index < array.length; index += 1) {
       let day = document.createElement('li');
       day.className = 'day';
-      day.innerText = index.toString();
+      day.innerText = array[index].toString();
+      if (day.innerText === '4' || day.innerText === '11' || day.innerText === '18' || day.innerText === '25'){
+        day.className += ' friday';
+      }
+      if (day.innerText === '24' || day.innerText === '25' || day.innerText === '31'){
+        day.className += ' holiday';
+      }
       diasDoCalendario.appendChild(day);
     }
   }
