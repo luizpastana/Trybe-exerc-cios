@@ -40,17 +40,50 @@ function createDaysOfTheWeek() {
   createDays(dezDaysList);
 
   // Função que cria o botão feriado
-
-  function criaBotao (){ 
-    let buttonsDiv = document.querySelector('.buttons-container');
+  let buttonsDiv = document.querySelector('.buttons-container');
+  let button = document.createElement('button');
+  
+  function criaBotaoFeriado (){ 
     let string = 'Feriados';
-    let button = document.createElement('button');
-    button.value = string;
     button.innerText = string; 
     button.id = 'btn-holiday';
-    // button.className = 'buttons-container';
     button.type = 'text';
     buttonsDiv.appendChild(button);
   }
+  
+  criaBotaoFeriado();
+  
+  // Função de click - feriados
+  
+  function corFeriados() {
+    let element = document.getElementsByClassName('holiday');
+    for (let index = 0; index < element.length; index += 1) {
+      element[index].style.backgroundColor = 'yellowgreen';
+    }
+  }
+  
+  button.addEventListener('click', corFeriados);
+  
+  // Cria botão sexta feira
+  
+  let buttonFriday = document.createElement('button');
+  
+  function criaBotaoSextaFeira (){ 
+    let string = 'Sexta-Feira';
+    buttonFriday.innerText = string; 
+    buttonFriday.id = 'btn-friday';
+    buttonFriday.type = 'text';
+    buttonsDiv.appendChild(buttonFriday);
+  }
+  
+  criaBotaoSextaFeira();
+  
+  buttonFriday.addEventListener('click', sextaFeira);
 
-  criaBotao();
+  function sextaFeira () {
+    let element = document.querySelectorAll('.friday');
+    for (let index = 0; index < element.length; index += 1){
+      element[index].innerText = 'Sexta Feira';
+    }
+  }
+  
