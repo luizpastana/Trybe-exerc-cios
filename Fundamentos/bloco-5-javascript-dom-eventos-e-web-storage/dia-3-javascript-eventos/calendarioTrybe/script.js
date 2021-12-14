@@ -58,7 +58,11 @@ function createDaysOfTheWeek() {
   function corFeriados() {
     let element = document.getElementsByClassName('holiday');
     for (let index = 0; index < element.length; index += 1) {
-      element[index].style.backgroundColor = 'yellowgreen';
+      if (element[index].style.backgroundColor === 'yellowgreen'){
+        element[index].style.backgroundColor = 'rgb(238,238,238)';
+      } else {
+        element[index].style.backgroundColor = 'yellowgreen';
+      }
     }
   }
   
@@ -81,9 +85,16 @@ function createDaysOfTheWeek() {
   buttonFriday.addEventListener('click', sextaFeira);
 
   function sextaFeira () {
+
+    let sextasArrey = [4, 11, 18, 25];
     let element = document.querySelectorAll('.friday');
     for (let index = 0; index < element.length; index += 1){
-      element[index].innerText = 'Sexta Feira';
+      if (element[index].innerText !== 'Sexta Feira'){
+        element[index].innerText = 'Sexta Feira';
+      } else {
+        element[index].innerText = sextasArrey[index];
+      }
     }
   }
+
   
