@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main id="main-content">
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nome">Nome: </label>
+                <input type="text" required max="40" name="nome" id="nome">
+                <label for="email">Email: </label>
+                <input type="text" max="50" name="email" id="email">
+                <label for="cpf">CPF: </label>
+                <input type="text" max="11" name="cpf" id="cpf">
+                <label for="endereco">Endereço: </label>
+                <input type="text"  max="50" id="endereco" name="endereco">
+                <label for="cidade">Cidade: </label>
+                <input type="text"  max="50" id="cidade" name="cidade">
+                <label for="estado">Estado: </label>
+                <select name="estado" id="estado"></select>
+                <section>
+                    <h1>Tipo:</h1>
+                    <input type="radio" id="casa" value="casa" name="tipo">
+                    <label for="casa">Casa </label>
+                    <input type="radio" name="tipo" id="apartamento" value="apartamento">
+                    <label for="apartamento">Apartamento</label>
+                </section>    
+            </fieldset>
+            <fieldset>
+                <legend>Sobre seu último emprego</legend>
+                <label for="curriculo">Currículo</label>
+                <textarea name="curriculo" id="curriculo" cols="30" rows="10" maxlength="1000"></textarea>
+                <label for="cargo">Cargo</label>
+                <input type="text" id="cargo" max="40" name="cargo">
+                <label for="descricao-cargo">Descreva seu cargo</label>
+                <input type="text" id="descricao-cargo" max="500" name="descricao-cargo">
+                <label for="inicio">Data de ínicio</label>
+                <input type="date" name="inicio" id="inicio">
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
