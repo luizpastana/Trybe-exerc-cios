@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media screen and (max-width: 600px) {
+      
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container nav {
+        display: flex;
+        align-content: space-around;
+    }
+
+    .container header nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container header nav ul li{
+        display: inline;
+        margin-left: 40px;
+    }
+
+    .aside-one h2 {
+        text-align: center;
+    }
+
+    .aside-one ul li{
+        list-style-type: none;
+    }
+
+    .aside-two {
+        display: flex;
+        flex-direction: column;
+        /* justify-items: center;    */
+    }
+    .aside-two h2{
+        text-align: center;
+    }
+    .aside-two ul {
+       display: flex;
+    }
+    .aside-two ul li {
+        list-style-type: none;
+        display: block;
+        /* justify-content: space-between; */
+    }
+    .main-content {
+        text-align: justify;
+        margin: 10px;
+        background-color: azure;
+    }
+    .main-content h1 {
+        text-align: center;
+    }
+    .main-content p {
+        /* Identar somente a primeira linha*/
+        
+    }
+    footer {
+        background-color: lightblue;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer h3 {
+        text-align: center;
+    }
+    footer p {
+        text-align: justify;
+    }
+  }
