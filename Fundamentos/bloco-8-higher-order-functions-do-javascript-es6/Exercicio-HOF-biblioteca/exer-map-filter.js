@@ -81,4 +81,20 @@ function nameAndAge() {
   return newArrey.sort((elementA, elementB) => elementA.age - elementB.age);
 }
 
-console.log(nameAndAge(books));
+// console.log(nameAndAge(books));
+
+function fantasyOrScienceFiction() {
+  // escreva seu código aqui
+  return books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
+}
+
+// console.log(fantasyOrScienceFiction());
+
+function oldBooksOrdered() {
+  // escreva seu código aqui
+  const oldBooks = books.filter((book) => 2022 - book.releaseYear > 60);
+  const ordered = oldBooks.sort((book1, book2) => book1.releaseYear - book2.releaseYear);
+  console.log(ordered);
+}
+
+oldBooksOrdered();
