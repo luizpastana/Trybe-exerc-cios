@@ -106,4 +106,17 @@ function fantasyOrScienceFictionAuthors() {
   return names.sort();
 }
 
-console.log(fantasyOrScienceFictionAuthors());
+// console.log(fantasyOrScienceFictionAuthors());
+
+function oldBooks() {
+  // escreva seu código aqui
+  const oldBooks = books.filter((book) => 2022 - book.releaseYear > 60);
+  const names = oldBooks.map((book) => `${book.name}`);
+  return names;
+}
+
+// console.log(oldBooks());
+
+function authorWith3DotsOnName() {
+  // essa aqui tá díficil
+}
