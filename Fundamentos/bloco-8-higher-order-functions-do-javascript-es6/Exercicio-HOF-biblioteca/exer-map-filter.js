@@ -97,4 +97,13 @@ function oldBooksOrdered() {
   console.log(ordered);
 }
 
-oldBooksOrdered();
+// oldBooksOrdered();
+
+function fantasyOrScienceFictionAuthors() {
+  // escreva seu código aqui
+  const obj = books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
+  const names = obj.map((book) => `${book.author.name}`);
+  return names.sort();
+}
+
+console.log(fantasyOrScienceFictionAuthors());
