@@ -82,4 +82,20 @@ function reduceNames() {
   return order;
 }
 
-console.log(reduceNames());
+// console.log(reduceNames());
+
+function averageAge() {
+  // escreva seu código aqui
+  const age = books.map((book) => book.releaseYear - book.author.birthYear);
+  const ageSum = age.reduce((acc, cur) => acc + cur);
+  return ageSum / age.length;
+}
+
+// console.log(averageAge());
+
+function longestNamedBook() {
+  // escreva seu código aqui
+  return books.reduce((acc, cur) => `${acc.name}`.length > `${cur.name}`.length ? acc.name : cur.name);
+}
+
+console.log(longestNamedBook());
