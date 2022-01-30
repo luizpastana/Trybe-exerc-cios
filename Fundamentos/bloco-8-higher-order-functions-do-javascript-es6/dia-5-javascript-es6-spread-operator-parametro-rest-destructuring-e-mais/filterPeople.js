@@ -28,11 +28,11 @@ const people = [
 
 // escreva filterPeople abaixo
 
-const filterPeople = (arr) => {
-  const australian = (arr) => arr.nationality === 'Australian' && 2022 - arr.bornIn > 22;
-  const f = people.filter(australian);
-  // const {name, nationality} = f;
-  return f;
+const filterPeople = () => {
+  const australians = people
+    .filter(({ nationality, bornIn }) => nationality === 'Australian' 
+      && bornIn <= 2000 && bornIn > 1900 )
+  return australians;
 }
 
 console.log(filterPeople(people));
